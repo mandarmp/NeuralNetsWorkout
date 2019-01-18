@@ -8,7 +8,7 @@ Created on Wed Jan  9 02:58:24 2019
 import tensorflow as tf
 import numpy as np
 
-def ORact(x):
+def ORactiavation(x):
     if(x>=1) :
         return 1
     else:
@@ -26,7 +26,7 @@ def firstnn(input1_,input2_) :
     with tf.Session() as sess:
         result=sess.run(multi)
         
-    return(ORact(result))
+    return(ORactivation(result))
 
 if __name__=="__main__":
     
